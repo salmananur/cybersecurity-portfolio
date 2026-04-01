@@ -1,0 +1,33 @@
+<#
+.SYNOPSIS
+    Disables Microsoft consumer experiences per STIG by setting "DisableWindowsConsumerFeatures" to 1.
+
+.NOTES
+    Author          : Salman Nur
+    LinkedIn        : linkedin.com/in/salman-nur-112aa225b/
+    GitHub          : github.com/salmananur
+    Date Created    : 2026-04-01
+    Last Modified   : 2026-04-01
+    Version         : 1.0
+    CVEs            : N/A
+    Plugin IDs      : N/A
+    STIG-ID         : WN11-CC-000197
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-01
+    Tested By       : Salman Nur
+    Systems Tested  : 
+    PowerShell Ver. : 
+#>
+
+# Ensure the registry path exists
+New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent" -Force | Out-Null
+
+# Set the required value
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent" `
+    -Name "DisableWindowsConsumerFeatures" `
+    -Value 1 `
+    -Type DWord
+
+# Verify
+Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CloudContent"
