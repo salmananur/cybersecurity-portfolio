@@ -1,3 +1,4 @@
+<#
 .SYNOPSIS
     Configures Group Policy to reprocess even if GPOs have not changed per STIG WN11-CC-000090.
 
