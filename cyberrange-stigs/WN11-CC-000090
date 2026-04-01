@@ -1,0 +1,20 @@
+.SYNOPSIS
+    Configures Group Policy to reprocess even if GPOs have not changed per STIG WN11-CC-000090.
+
+.NOTES
+    Author  : Salman Nur
+    Date    : 2026-04-01
+    Version : 1.0
+    STIG-ID : WN11-CC-000090
+#>
+
+# Ensure the registry path exists
+New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System\GroupPolicy" -Force | Out-Null
+
+# Enable registry policy processing and "Process even if GPOs have not changed"
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System\GroupPolicy" `
+    -Name "NoGPOListChanges" `
+    -Value 0 -Type DWord  # 0 means it will process even if GPOs have not changed
+
+# Verify the setting
+Get-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System\GroupPolicy"
