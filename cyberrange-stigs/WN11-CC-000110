@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script ensures that the maximum size of the Windows Application event log is at least 32768 KB (32 MB).
+    Disables HTTP printing by setting "DisableHTTPPrinting" to 1 per STIG WN11-CC-000110.
 
 .NOTES
     Author          : Salman Nur
