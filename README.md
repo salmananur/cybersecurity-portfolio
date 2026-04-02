@@ -7,7 +7,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 
 - **[Vulnerability Management Program Implementation]**
 - **[Programmatic Vulnerability Remediations (PowerShell and BASH)]**
-- **[SOC Automation]**(https://github.com/TheMangoMamba/SOC-Automation)
+- **[SOC Automation](https://github.com/TheMangoMamba/SOC-Automation)**
 
 ## 🚨 Threat Hunting and Security Operations
 
