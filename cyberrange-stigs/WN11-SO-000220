@@ -1,5 +1,6 @@
 <#
 .SYNOPSIS
+    This script configures the NTLM minimum session security settings in the Windows registry.
 
 .NOTES
     Author          : Salman Nur
