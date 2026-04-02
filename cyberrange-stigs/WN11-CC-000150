@@ -1,0 +1,19 @@
+# WN11-CC-000150 - Require password on resume from sleep (AC power)
+
+$regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51"
+$valueName = "ACSettingIndex"
+$requiredValue = 1  # 1 = Require password
+
+# Ensure the registry path exists
+if (-not (Test-Path $regPath)) {
+    New-Item -Path $regPath -Force | Out-Null
+}
+
+# Set AC resume password requirement
+New-ItemProperty -Path $regPath `
+    -Name $valueName `
+    -Value $requiredValue `
+    -PropertyType DWord `
+    -Force | Out-Null
+
+Write-Output "Password on resume from sleep (plugged in) enabled."
