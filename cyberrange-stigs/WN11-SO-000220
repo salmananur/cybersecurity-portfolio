@@ -1,0 +1,34 @@
+<#
+.SYNOPSIS
+
+.NOTES
+    Author          : Salman Nur
+    LinkedIn        : linkedin.com/in/salman-nur-112aa225b/
+    GitHub          : github.com/salmananur
+    Date Created    : 2026-04-01
+    Last Modified   : 2026-04-01
+    Version         : 1.0
+    STIG-ID         : WN11-SO-000220
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-01
+    Tested By       : Salman Nur
+#>
+
+$regPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0"
+$valueName = "NTLMMinServerSec"
+$requiredValue = 537395200  # 0x20080000
+
+# Ensure the registry path exists
+if (-not (Test-Path $regPath)) {
+    New-Item -Path $regPath -Force | Out-Null
+}
+
+# Set the correct value
+New-ItemProperty -Path $regPath `
+    -Name $valueName `
+    -Value $requiredValue `
+    -PropertyType DWord `
+    -Force | Out-Null
+
+Write-Output "NTLM minimum session security configured (NTLMv2 + 128-bit encryption)."
