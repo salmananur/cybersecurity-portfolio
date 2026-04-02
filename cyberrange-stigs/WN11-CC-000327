@@ -1,0 +1,34 @@
+# WN11-CC-000327 - Enable PowerShell Transcription
+
+$regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription"
+$valueNameEnable = "EnableTranscripting"
+$valueNameOutput = "OutputDirectory"
+
+# Desired values
+$enableValue = 1
+$outputDir = "C:\PowerShellTranscripts"  # Change this to a secure location or central log share
+
+# Ensure the registry path exists
+if (-not (Test-Path $regPath)) {
+    New-Item -Path $regPath -Force | Out-Null
+}
+
+# Enable transcription
+New-ItemProperty -Path $regPath `
+    -Name $valueNameEnable `
+    -Value $enableValue `
+    -PropertyType DWord `
+    -Force | Out-Null
+
+# Set transcript output directory
+if (-not (Test-Path $outputDir)) {
+    New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
+}
+
+New-ItemProperty -Path $regPath `
+    -Name $valueNameOutput `
+    -Value $outputDir `
+    -PropertyType String `
+    -Force | Out-Null
+
+Write-Output "PowerShell Transcription enabled. Logs will be stored in $outputDir."
