@@ -1,0 +1,34 @@
+<#
+.SYNOPSIS
+    This PowerShell script ensures that Internet connection sharing is disabled.
+
+.NOTES
+    Author          : Salman Nur
+    LinkedIn        : linkedin.com/in/salman-nur-112aa225b/
+    GitHub          : github.com/salmananur
+    Date Created    : 2026-04-01
+    Last Modified   : 2026-04-01
+    Version         : 1.0
+    STIG-ID         : WN11-CC-000044
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-02
+    Tested By       : Salman Nur
+#>
+
+$regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Network Connections"
+$valueName = "NC_ShowSharedAccessUI"
+
+# Ensure the registry path exists
+if (-not (Test-Path $regPath)) {
+    New-Item -Path $regPath -Force | Out-Null
+}
+
+# Disable ICS
+New-ItemProperty -Path $regPath `
+    -Name $valueName `
+    -Value 0 `
+    -PropertyType DWord `
+    -Force | Out-Null
+
+Write-Output "Internet Connection Sharing (ICS) has been disabled."
