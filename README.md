@@ -1,25 +1,22 @@
-# 🛡️ Cybersecurity Projects Portfolio
+# <a href="https://www.linkedin.com/in/joshmadakor/">Josh Madakor</a>'s IT and Cybersecurity Project Portfolio 🔐
 
-Welcome! This repository is a hub for my cybersecurity and SOC automation projects.
+I'm passionate about cybersecurity and love tackling complex challenges through hands-on projects. From vulnerability management to threat detection, these projects allow me to dive deep into the ever-evolving landscape of cybersecurity. Please feel free to check them out and see the work I’ve put into enhancing security operations and processes!
 
----
 
-## 🔍 Malware Analysis Lab (Metasploitable 2)
+## ⚠️ Vulnerability Management Projects
 
-**Repository**: [Malware Analysis Lab](https://github.com/TheMangoMamba/metasploitable-vsftpd)
+- **[Vulnerability Management Program Implementation]**
+- **[Programmatic Vulnerability Remediations (PowerShell and BASH)]**
+- **[SOC Automation]**(https://github.com/TheMangoMamba/SOC-Automation)
 
-- **Summary**: Exploited Metasploitable 2, documented attack paths.
-- **Tools**: Nmap, Metasploit, netcat, Unix privilege escalation.
+## 🚨 Threat Hunting and Security Operations
 
----
+- **[Threat Hunting Scenario (Tor Browser Usage)]**
 
-## ⚙️ SOC Automation Project
+<hr/>
 
-**Repository**: [SOC Automation](https://github.com/TheMangoMamba/SOC-Automation)
-
-- **Summary**: Set up a SOC with Wazuh, Shuffle, and TheHive on a lightweight VM.
-- **Features**: Threat enrichment, alert forwarding, email notifications.
-
+## 🤳 Connect With Me
+[linkedin]: https://linkedin.com/in/salman-nur-112aa225b/
 ---
 
 ## 📌 About Me
