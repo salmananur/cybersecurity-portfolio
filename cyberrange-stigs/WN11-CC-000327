@@ -1,3 +1,25 @@
+<#
+.SYNOPSIS
+    This PowerShell script ensures that PowerShell Transcription is enabled
+    by setting the "EnableTranscripting" registry value to 1 and specifying
+    a directory for transcript output. This helps monitor and audit all
+    PowerShell activity for security and compliance purposes.
+
+.NOTES
+    Author          : Salman Nur
+    LinkedIn        : linkedin.com/in/salman-nur-112aa225b/
+    GitHub          : github.com/salmananur
+    Date Created    : 2026-04-01
+    Last Modified   : 2026-04-04
+    Version         : 1.1
+    STIG-ID         : WN11-CC-000327
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-01
+    Tested By       : Salman Nur
+    Systems Tested  : Windows 11 Pro
+#>
+
 # WN11-CC-000327 - Enable PowerShell Transcription
 
 $regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription"
