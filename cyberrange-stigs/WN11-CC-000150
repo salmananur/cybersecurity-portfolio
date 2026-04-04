@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+    Configures Advanced Audit Policy to audit successful process creation events (Detailed Tracking).
+
+.NOTES
+    Author          : Salman Nur
+    LinkedIn        : linkedin.com/in/salman-nur-112aa225b/
+    GitHub          : github.com/salmananur
+    Date Created    : 2026-04-01
+    Last Modified   : 2026-04-04
+    Version         : 1.0
+    STIG-ID         : WN11-CC-000150
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-01
+    Tested By       : Salman Nur
+#>
+
 # WN11-CC-000150 - Require password on resume from sleep (AC power)
 
 $regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51"
