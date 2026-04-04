@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Configures Advanced Audit Policy to audit successful process creation events (Detailed Tracking).
+    Require password on resume from sleep (AC power)
 
 .NOTES
     Author          : Salman Nur
