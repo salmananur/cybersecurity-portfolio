@@ -16,7 +16,7 @@ I'm passionate about cybersecurity and love tackling complex challenges through 
 <hr/>
 
 ## Connect With Me
-[linkedin]: 
+[LinkedIn](https://linkedin.com/in/salman-nur-112aa225b/)
 ---
 
 ## About Me
