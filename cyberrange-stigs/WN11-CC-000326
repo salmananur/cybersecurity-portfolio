@@ -1,3 +1,24 @@
+<#
+.SYNOPSIS
+    This PowerShell script ensures that PowerShell Script Block Logging is enabled
+    by setting the "EnableScriptBlockLogging" registry value to 1. This helps
+    monitor and audit PowerShell activity for security purposes.
+
+.NOTES
+    Author          : Salman Nur
+    LinkedIn        : linkedin.com/in/salman-nur-112aa225b/
+    GitHub          : github.com/salmananur
+    Date Created    : 2026-04-01
+    Last Modified   : 2026-04-04
+    Version         : 1.1
+    STIG-ID         : WN11-CC-000326
+
+.TESTED ON
+    Date(s) Tested  : 2026-04-01
+    Tested By       : Salman Nur
+    Systems Tested  : Windows 11 Pro
+#>
+
 $regPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging"
 $valueName = "EnableScriptBlockLogging"
 $requiredValue = 1  # 1 = Enabled
