@@ -10,7 +10,7 @@ I’m passionate about cybersecurity and enjoy tackling complex challenges throu
 
 ## Threat Hunting and Security Operations
 
-- **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/salmananur/threat-hunting)** – Developed a scenario-based threat hunting project to detect anomalous Tor Browser activity within enterprise environments.
+- **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/salmananur/threat-hunting/blob/main/tor-report.md)** – Developed a scenario-based threat hunting project to detect anomalous Tor Browser activity within enterprise environments.
 
 ---
 
