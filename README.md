@@ -11,7 +11,7 @@ I’m passionate about cybersecurity and enjoy tackling complex challenges throu
 ## Threat Hunting and Security Operations
 
 - **[Threat Hunting Scenario (Tor Browser Usage)](https://github.com/salmananur/threat-hunting/blob/main/tor-report.md)** – Developed a scenario-based threat hunting project to detect anomalous Tor Browser activity within enterprise environments.
-- **[Threat Hunt — EMBERFORGE: SOURCE LEAK]** – Investigated a targeted intrusion in Microsoft Sentinel using KQL, tracing attacker activity from initial ISO-based payload delivery through privilege escalation, lateral movement to three hosts including a Domain Controller, NTDS credential extraction, and cloud-based data exfiltration.
+- **[Threat Hunt — EMBERFORGE: SOURCE LEAK](https://github.com/salmananur/threat-hunting/blob/main/emberforge-report.md)** – Investigated a targeted intrusion in Microsoft Sentinel using KQL, tracing attacker activity from initial ISO-based payload delivery through privilege escalation, lateral movement to three hosts including a Domain Controller, NTDS credential extraction, and cloud-based data exfiltration.
 
 ---
 
