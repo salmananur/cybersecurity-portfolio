@@ -1,8 +1,8 @@
-# <a href="https://linkedin.com/in/salman-nur-112aa225b/">Salman Nur</a>'s IT & Cybersecurity Project Portfolio
+# <a href="https://linkedin.com/in/salman-nur-112aa225b/">Salman Nur</a>'s IT & Cybersecurity Portfolio
 
 I’m passionate about cybersecurity and enjoy tackling complex challenges through hands-on projects. From vulnerability management to threat detection, my work allows me to dive deep into the ever-evolving landscape of security operations. Explore my projects to see the practical solutions I’ve built to enhance organizational security posture.
 
-## Vulnerability Management Projects
+## Vulnerability Management
 
 - **[Vulnerability Management Program Implementation](https://github.com/salmananur/vulnerability-management-program)** – Implemented structured vulnerability management processes to identify, prioritize, and remediate security risks.  
 - **[Programmatic Vulnerability Remediations (PowerShell and BASH)](cyberrange-stigs/)** – Automated patching and remediation workflows to streamline SOC operations.  
