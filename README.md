@@ -15,6 +15,9 @@ I’m passionate about cybersecurity and enjoy tackling complex challenges throu
 
 ---
 
+## SecAI
+- **[LLM Red Teaming](https://github.com/salmananur/llm-redteam/blob/main/README.md)** - Evaluates how a language model responds to adversarial prompts across multiple attack categories, and grades them on different metrics.
+
 ## Connect With Me
 
 [LinkedIn](https://linkedin.com/in/salman-nur-112aa225b/)
